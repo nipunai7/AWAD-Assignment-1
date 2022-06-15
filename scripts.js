@@ -211,13 +211,13 @@ function showResultByCountry(param) {
     }
 }
 
-function showResultbyPrice(param,sign) {
+function showResultbyPrice(param, sign) {
     var xml = xhttp.responseXML;
     console.log(xml);
     var txt = "";
     var txt2 = "";
-    path = "/catalog/cd[price"+sign+""+param+"]/title";
-    path2 = "/catalog/cd[price"+sign+""+param+"]/price";
+    path = "/catalog/cd[price" + sign + "" + param + "]/title";
+    path2 = "/catalog/cd[price" + sign + "" + param + "]/price";
     if (xml.evaluate) {
         var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
         var nodes2 = xml.evaluate(path2, xml, null, XPathResult.ANY_TYPE, null);
@@ -227,12 +227,12 @@ function showResultbyPrice(param,sign) {
 
         while (result) {
 
-                txt += "<li>" + result
-                    .childNodes[0]
-                    .nodeValue + "</li>";
-                txt2 += "<li>" + result2
-                    .childNodes[0]
-                    .nodeValue + "</li>";
+            txt += "<li>" + result
+                .childNodes[0]
+                .nodeValue + "</li>";
+            txt2 += "<li>" + result2
+                .childNodes[0]
+                .nodeValue + "</li>";
 
             result = nodes.iterateNext();
             result2 = nodes2.iterateNext();
