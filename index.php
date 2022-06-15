@@ -5,36 +5,7 @@ require __DIR__ . '/vendor/autoload.php'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XML- Assignment 1</title>
-    <style>
-        .form-control{
-            margin-top: 4px;
-        }
-
-        .label-mid{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-
-        .ui-datepicker-calendar {
-            display: none;
-        }
-
-        .ui-datepicker-month {
-            display: none;
-        }
-
-        .ui-datepicker-next,.ui-datepicker-prev {
-            display:none;
-        }
-
-    </style>
+<title>XML- Assignment 1 | Home</title>
     <?php include('navigation.php') ?>
 </head>
 <body onload="loadDoc()">

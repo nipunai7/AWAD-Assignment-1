@@ -7,13 +7,11 @@ function loadDoc() { //Loading the XML File
             document.getElementById("cd-table").innerHTML = "<h2 class='text-center'>XML File Could Not be Loaded</h2>"; //Shows when fails to load the XML File
         }
     };
-
     xhttp.open("GET", "xmlFile.xml", true);
     xhttp.send();
 }
 
 function myFunction(xml) { //Creating the table from Loaded XML file
-    var i;
     xmlDoc = xml.responseXML;
     var table="<tr><th>Title</th><th>Artist</th><th>Country</th><th>Company</th><th>Price</th><th>Year</th><th colspan='2' class='text-center'>Modify</th></tr>";
     var x = xmlDoc.getElementsByTagName("cd");
@@ -59,7 +57,6 @@ function downloadXML(){ //Download the XML File to user
 }
 
 function addXML() {
-  
     newNode = xmlDoc.createElement("cd");
     newEle = [];
 
@@ -69,7 +66,6 @@ function addXML() {
 
     newEle = ["title","artist","country","company","price","year"];
     var val= [document.getElementById("cdName").value,document.getElementById("artist").value,document.getElementById("country").value,document.getElementById("company").value,document.getElementById("price").value,document.getElementById("datepicker").value ];
-
     z = xmlDoc.getElementsByTagName("cd")[0];
 
     for (i=0;i<newEle.length;i++){ //Checking for empty values in the form
@@ -84,11 +80,9 @@ function addXML() {
         newElem = xmlDoc.createElement(newEle[i]);
         newText=xmlDoc.createTextNode(val[i]);
         newElem.appendChild(newText);
-
         z.appendChild(newElem);
     }
     myFunction(xhttp);
-
     xmlText = new XMLSerializer().serializeToString(xmlDoc);
     localStorage.setItem("xmlupdated", xmlText);
     xmlDoc2 = localStorage.getItem("xmlupdated");
