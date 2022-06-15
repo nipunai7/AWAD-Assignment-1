@@ -56,7 +56,7 @@ function downloadXML(){ //Download the XML File to user
     download('xmlFile.xml',xmlText);
 }
 
-function addXML() {
+function addXML() { //Adding new entries to the XML DOM
     newNode = xmlDoc.createElement("cd");
     newEle = [];
 
@@ -76,7 +76,7 @@ function addXML() {
         }
     }
 
-    for (i=0;i<newEle.length;i++) { //Adding new values to the XMLDom
+    for (i=0;i<newEle.length;i++) { //Adding new values to the new CD
         newElem = xmlDoc.createElement(newEle[i]);
         newText=xmlDoc.createTextNode(val[i]);
         newElem.appendChild(newText);
@@ -90,7 +90,7 @@ function addXML() {
     xmlDoc2 = parser.parseFromString(xmlDoc2,"text/xml");
 }
 
-function download(filename, text) {
+function download(filename, text) { //Creating the XML file from the XMLDom and downlaoding
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
     element.setAttribute('download', filename);
@@ -100,7 +100,7 @@ function download(filename, text) {
     document.body.removeChild(element);
 }
 
-function update(url){
+function update(url){ //Updating function for DB and server XML file
    var xmlWrite = new XMLHttpRequest();
    xmlWrite.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
