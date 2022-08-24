@@ -1,36 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="xsltFile.xsl"?><catalog>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsltFile.xsl"?>
+<catalog>
+
     <cd>
-        <title>Into XML</title>
-        <artist>MNK</artist>
-        <country>SL</country>
-        <company>UOK</company>
-        <price>10.2</price>
-        <year>1326</year>
-    </cd>
-    <cd>
-        <title>Into XML</title>
-        <artist>MNK</artist>
-        <country>SL</country>
-        <company>UOK</company>
-        <price>10.2</price>
-        <year>1326</year>
-    </cd>
-    <cd>
-        <title>Empire Burlesque</title>
-        <artist>Bob Dylan</artist>
+        <title>Weekend</title>
+        <artist>Weekend</artist>
         <country>USA</country>
-        <company>Columbia</company>
-        <price>10.90</price>
-        <year>1985</year>
+        <company>WB</company>
+        <price>10.6</price>
+        <year>2022</year>
     </cd>
-    <cd>
-        <title>Hide your heart</title>
-        <artist>Bonnie Tyler</artist>
-        <country>UK</country>
-        <company>CBS Records</company>
-        <price>9.90</price>
-        <year>1988</year>
-    </cd>
+
     <cd>
         <title>Greatest Hits</title>
         <artist>Dolly Parton</artist>
@@ -39,30 +19,7 @@
         <price>9.90</price>
         <year>1982</year>
     </cd>
-    <cd>
-        <title>Still got the blues</title>
-        <artist>Gary Moore</artist>
-        <country>UK</country>
-        <company>Virgin records</company>
-        <price>10.20</price>
-        <year>1990</year>
-    </cd>
-    <cd>
-        <title>Eros</title>
-        <artist>Eros Ramazzotti</artist>
-        <country>EU</country>
-        <company>BMG</company>
-        <price>9.90</price>
-        <year>1997</year>
-    </cd>
-    <cd>
-        <title>One night only</title>
-        <artist>Bee Gees</artist>
-        <country>UK</country>
-        <company>Polydor</company>
-        <price>10.90</price>
-        <year>1998</year>
-    </cd>
+
     <cd>
         <title>Sylvias Mother</title>
         <artist>Dr.Hook</artist>

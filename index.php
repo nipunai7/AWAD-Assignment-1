@@ -23,7 +23,7 @@ require __DIR__ . '/vendor/autoload.php'
                         id="cdName"
                         spellcheck="false"
                         class="form-control"
-                        value="Into XML"
+                        value=""
                         required="required"></div>
                 </div>
                 <div style="display: flex;justify-content: space-around;">
@@ -35,7 +35,7 @@ require __DIR__ . '/vendor/autoload.php'
                         id="artist"
                         spellcheck="false"
                         class="form-control"
-                        value="MNK"
+                        value=""
                         required="required"></div>
                 </div>
                 <div style="display: flex;justify-content: space-around;">
@@ -47,7 +47,7 @@ require __DIR__ . '/vendor/autoload.php'
                         id="country"
                         spellcheck="false"
                         class="form-control"
-                        value="SL"
+                        value=""
                         required="required"></div>
                 </div>
                 <div style="display: flex;justify-content: space-around;">
@@ -59,7 +59,7 @@ require __DIR__ . '/vendor/autoload.php'
                         id="company"
                         spellcheck="false"
                         class="form-control"
-                        value="UOK"
+                        value=""
                         required="required"></div>
                 </div>
                 <div style="display: flex;justify-content: space-around;">
@@ -71,7 +71,7 @@ require __DIR__ . '/vendor/autoload.php'
                         id="price"
                         spellcheck="false"
                         class="form-control"
-                        value="10.2"
+                        value=""
                         required="required"></div>
                 </div>
                 <div style="display: flex;justify-content: space-around;">
@@ -83,7 +83,7 @@ require __DIR__ . '/vendor/autoload.php'
                         id="datepicker"
                         spellcheck="false"
                         class="form-control"
-                        value="1326"
+                        value=""
                         required="required"></div>
                 </div>
                 <div class="col-12" style="text-align: end;margin-top: 10px;">

@@ -1,5 +1,8 @@
 <html>
-    <?php include('navigation.php') ?>
+    <head>
+        <title>XML- Assignment 1 | Filters</title>
+        <?php include('navigation.php') ?>
+    </head>
     <body onload="loadDoc()">
         <h1 class="text-center">CD Collection Filters</h1>
         <div class="row m-5">
@@ -18,6 +21,8 @@
                 <button
                     class="btn btn-info ml-3"
                     onclick="console.log(price);showResultbyPrice(price,'<');"><</button>
+                    <button class="btn btn-info ml-3"
+                    onclick="console.log(price);showResultbyPrice(price,'=');">=</button>
                     <button class="btn btn-info ml-3"
                     onclick="console.log(price);showResultbyPrice(price,'>');">></button>
             </div>
